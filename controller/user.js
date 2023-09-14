@@ -28,7 +28,7 @@ router.post("/create-user", async (req, res, next) => {
 
     const activationToken = createActivationToken(user);
 
-    const activationUrl = `https://alienbd.com/activation/${activationToken}`;
+    const activationUrl = `https://amarbazar-frontend.vercel.app/activation/${activationToken}`;
 
     try {
       await sendMail({
