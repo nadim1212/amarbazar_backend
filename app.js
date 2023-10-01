@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 
 app.use(cors({
-  origin: 'https://www.nogodshop.com',
+  origin: 'http://localhost:3000',
   credentials: true
 }));
 
