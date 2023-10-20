@@ -28,7 +28,7 @@ router.post("/create-user", async (req, res, next) => {
 
     const activationToken = createActivationToken(user);
 
-    const activationUrl = `/activation/${activationToken}`;
+    const activationUrl = `https://www.nogodshop.com/activation/${activationToken}`;
 
     try {
       await sendMail({
